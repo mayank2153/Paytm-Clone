@@ -1,89 +1,628 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"  />
+  <link rel="stylesheet" href="/assets/index-01ef45de.css">
+</head>
+<body>
+    <nav class="flex justify-evenly bg-white mx-0 my-0 shadow-xl items-center  w-full top-0 z-20 fixed
+    ">
+        <div class="w-40 ml-[40px] mt-4 mb-4 h-auto float-right">
+            <a href=""><img src="./images/paytm_logo.png " alt="" class="w-max object-fill"></a>
+        </div>
+        <div>
+            <ul class="flex justify-evenly space-x-8 my-7 ">
+                <li class="font-semibold text-lg font-sans hover:bg-gray-100 transition-all duration-200"><a href="">Paytm for Business</a></li>
+                <li class="font-semibold text-lg font-sans hover:bg-gray-100 transition-all duration-200"><a href="">Paytm for Consumer</a></li>
+                <li class="font-semibold text-lg font-sans hover:bg-gray-100 transition-all duration-200"><a href="">Investor Relations </a></li>
+                <li class="font-semibold text-lg font-sans hover:bg-gray-100 transition-all duration-200"><a href="">Compan</a>y</li>
+                <li class="font-semibold text-lg font-sans hover:bg-gray-100 transition-all duration-200 "><a href="">Career</a></li>
+            </ul>
+        </div>
+        <button class="border-2 text-white rounded-[25px] border-solid bg-blue400 w-[100px] p-[3px]  items-center justify-between mt-6 mb-4 hover:bg-blue950 transition-all duration-200 font-sans font-semibold mr-[40px]">Sign In</button>
+    
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.11.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.11.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.11.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.11.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.11.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.11.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.11.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.11.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.11.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.11.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    </nav>
+    <!--  -->
+    <div class="text-center h-[40px] font-semibold font-sans pt-2  bg-gray100 bg-opacity-60 relative top-20">
+        No Wallet KYC Required
+😊
+to pay using UPI on Paytm.
+Learn more.
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <section class="w-full flex bg-white justify-between  mb-24 relative top-20 mt-[50px] ">
+        <!--left part-->
+        <div class="flex flex-col  ml-[140px] max-w-[540px] leading-2 mt-[80px] o">
+            <img src="data:image/png;base64,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" alt="" class="h-20 mb-3 mt-4 w-20">
+            <div class="leading-2 mt-[40px]">
+                <h1 class="font-sans text-6xl font-bold">India's Most-loved Payments App</h1>
+                <p class="text-xl font-sans font-semibold mt-[20px]">Recharge & pay bills, book flights & movie tickets, open a savings account, invest in stocks & mutual funds, and do a lot more.</p>
+            </div>
+            <div class=" bg-black w-[230px] rounded-full text-center mt-6 hover:bg-white border-solid border-2 border-black group">
+                <button class=" text-white py-3 font-sans font-semibold group-hover:text-black" >Download Paytm App</button>
+            </div>
+            
+        </div>
+        <!-- right part -->
+        <div class="">
+            <img src="/assets/hero_section-a2d53363.png" alt="" class="h-[570px] w-[540px]">
+        </div>
+    </section>
+    <!-- page 2 -->
+    <section class="bg-skyblue w-full h-[400px]">
+        <div class=" p-[65px] text-white font-sans text-4xl font-bold ">
+            Recharge & Pay Bills on Paytm.
+        </div>
+        <div class="pl-[80px] flex justify-between pr-[80px]">
+            <span class="mr-[44px] pl-[40px] ">
+                <div class=" hover:bg-bluehover w-36 rounded-lg p-4 hover:cursor-pointer" >
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAzFBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////v8/iDosY1Z6MHRI5zlr/g5/GTrc4XT5UmW5ySrs2DocfB0OJFcqoXUJXv9PiSrc5Fc6qiudXB0OM2Z6OyxNyiuNRkirjC8fxn3Ph24Pik6vtJ1vcMyPRY2fiG4/qF5Pkqz/Uby/U60vU60/aV5vqF4/mU5/rh+P6z7vvw+/6xxNuiudTg6PG+aTviAAAAFnRSTlMAIFBvj5+/38+vQDBg7xB/X3CAkKCwVBl+YQAAAAFvck5UAc+id5oAAAABc1JHQgCuzhzpAAADkUlEQVR42u2ba1fbMAyGkzSOnTROad25pTBWtsLGBttYd7+xjf//n5akBc6Bkki+RN0Z72fXeurI8k0KAhOFUS9mCee6FhdJGveyftCJwjwWUm+UTOIo9Gq8yGKuWyRY5st8xqQGSbLIvfX+AGh97RbM7bfIEo1WkpGar4dhh9R8jWDvDKGF+UqpnS8UA22tQWEx+lw7EDf1xiLWjhSbfX2unYkbeMKO1A4lh1j7sXasAe7zp9q5UsRsCIX2ILgjuHQ/EwJf9qEE/uzDCHzahxAUXu2XO7a2uZBqz0qb7Q+0dzUuDD3dgRr2SaHsAkDe74hcdyJedLUAId0g050po4gArR9hoDvUaMMM0J3q7kxgoN9NpruzRu3u7cMObrftR6CfPT6YterJ3MgPQR54OANpbjAEOeQ3+zOgnuKHADQAz8q+F4dHTU2Ojhdlo+foIQDFoEn15160tTqpWk2wQwA6Alddv2xvVk2TV8ghgMWA07Lns/ZmZ2WzU1CHfWQMcA4wQi7DzgEkLgi5B7h2Q0YFwNYAkgpAFqiNiHuA9TdgdACqBhB0ABy1E/EAUO9LIkqAvARQlAAKuhD5AhDwKOAHoIzGfU0JUHphRgsQBUNagCF8EvgBUIg7GS8ADD4L/QAkgaAF4IhbEU8AmhZAPwA8ANAD8P88Dgj6UDymBXhEvxyTb0giWoAMcUXrBaBPvy2H70h8ACS2R7PXb96e2x7NcguAd8tS7y0AIrvj+YdlrY92x3PwanAX4NMK4LMxgKhvSJQxwHItYwBmeUn1ZWX/q+UlVWF8TfdtBXBuCnB1VTo2ngXfK/s/jGcBw71YbooDPy/Of5nHgetcO0kTCfn1bfmIBoDdJIzSAITIJ5vf8Ccb0LNZYvRo1dr1H6NHK9gQ1M9288bOJ9MD6LMdx+cOnEAfLi8hvd1KJQENwTHM/hQ/ANBgVL+LtmhxjAtCqCHQl3ttz/fNT7sbYsDWJDAAw6EjjbYxiYU8jQexQbeVIsolvC8EbFEyG/yQYqPGJGtFMwO3KKUzKARFBNimtF76xGb61G765HZfBAJR50Fd4OBjd6CwRSZDt0Uu+b9X5uNyYVCm1V7EpV7VbHDgiyOLYrfKE8Z25hP70s/I4js4KvvMOan5LSh6XfkCahjkyEMheDQGFz77K74et+7YuMqKwKfCSCX3Fb8Llfstfr+518t6Kk3EVfk/T5jqGRbe/wWxo3NijV+KQAAAAABJRU5ErkJggg==" alt="" class="h-[70px] mb-5 pl-2">
+                    <p class="text-white text-base pl-2">Recharge</p>
+                    <p class="text-white text-base font-semibold pl-2">Prepaid</p>
+                    <p class="text-white text-base font-semibold pl-2">Mobile ></p>
+                </div>
+                
+            </span>
+            <span class="mr-[44px]">
+                <div class=" hover:bg-bluehover w-36 rounded-lg p-4 hover:cursor-pointer" >
+                    <img src="data:image/png;base64,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" alt="" class="h-[70px] mb-5 pl-2">
+                    <p class="text-white text-base pl-2">Pay</p>
+                    <p class="text-white text-base font-semibold pl-2">Electricity</p>
+                    <p class="text-white text-base font-semibold pl-2">Bill ></p>
+                </div>
+                
+            </span>
+            <span class="mr-[44px]">
+                <div class=" hover:bg-bluehover w-36 rounded-lg p-4 hover:cursor-pointer" >
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAABBVBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////v8/hFc6oHRI5Uf7Fzlr+iudR0lr8mW5yDosaDoceiudXg5/EXUJXQ3OpkirgmXJzv9PjR3Org+P3C8fzv+/41Z6PR9f1J1vcMyPRn3fhFcqobzPUqz/Xw+/7g6PGz7vtUfrGDocaSrs124PjB0OJ20OzR9P3B0OM2Z6OTrc4HTJQMwO0rz/WxxNuSrc4Jfrvh+P0JhsGxxdzh+P6k6vtn3Ph23/gXT5U1aKNVfrGiuNSSrc1zlb+Trc3Q3OmyxNxlPx3EAAAAFnRSTlMAIFBvj5+/38+vQDBg7xB/X3CAkKCwVBl+YQAAAAFvck5UAc+id5oAAAABc1JHQgCuzhzpAAAFiklEQVR42tVbaXvaRhDm0oFAIiC6QjZVzSHsuGodmpC6pSX0cK+0qZu4+f8/pWglIQl2tTvSCtH5YD82NvNqjncOdmu1PFJvNFuSrCgIi6LK7VZT69ROIvVuS9URUXS51aiXqtzQWgpiiCppZanXJB1xiS41xGvv9Di1h2EhifWFJiOwyFql6rEZnlWqHkMoHgz1Aup9aReLBaOHCkvPKGB9BQkQJW80Gi0kSFr5vK8gYaLkiIRnOhIoeh+qv4UESw/m/jYSLm1ANtRVVILwB4LI8MuDoCz9vAjK08+HoEz9PAiMUvXvOjZWLrRRydLO1t9DpUtmYWiiE0hGn1TXTwFApweigk4iinGqAgQMAw2dTLQqGIDphB46oQwIGYBOKseZIAH+2xrZF1YxAPKh/gbkvy9t274QHIeQCBzbvnwq1ARdiAMcDMD+TKQJIAa4skOZiDMBhIOmvu7Lmf91LswEkBHY3WleXN/4CGZTQSYAcYATGH/im8ChIHh+e/s5+506uTjAT4HFPhQ8Eh188eXdTl4856dDSAgud2rdOBhHBP1f3WF5+YrVGOQhIRyCqzgaCHTw8i6UF7xhCPVA9NSWR6KD13d7YZlACgFAGrGvdyrvox9WCx/BN+m/+DYG8JrlAwPeiPgPvUZpBOu8AEIfgOqgrzDxM4EOvosBfM96OxMDgMzim52+N8lfHNHB9ocfI/0/sTsjMAv9fFSIHzACK1EofokA/MrXl4A6ga1fBwi1KUwMC2fmb8Hz33K8X3cHwIQAuE8mQaI4BNw0xXk5+/2Pt3/+9fYVz/uZwEJEBIAiOpjiRmFxAxmWgSxABmAFdLB+53/7ewUa02q1DioMIKQDLI/X0O4YNg8RgnBPBzb5tWxp1Pqgv/9nXwuP+WEnD+CupA9LAjQ/JKIUHczgw4IJ3Mn4VDyjt6oeGIEEy8KgIVtTe0WiexiNIXAr66t5T++VwMOCAt2KbMltWIIOoACAiHE9png6oAPguAIFgA1Ns/MKdwfzcgFsqXkQ0YEzLRWA5T/lmPbqBIwADAAnvGNlTq4QOoADwI6mZ9sHIB3kWE5eZY+lS9D2QskBAEeBR3/ZgxCSCqXifeGhPyOIDuTaMMdk/5hNeRA6+ARUjq2ncYJ06c94Y3NvL0xQQ+JElg86ILoN+OmgDxkLNvFeaMLYk3HTgQYZjHDF9xLPaLvTTDrgWGZ2AG25NUsuKAMEzjgTLZMOdMhsOg4737AhullkGoGPDmTIaLYMAUTBFU0DFAgB3hV7NOPd0uLt0CQVXNHO1BsfYlg9jVLmoo8F/ON50IxdpWpNPBJ57tM6eNrVv0+uE/16xDGe81aDcEH5mK52k3gqO5bRhmM25Q2CTejRILhGsc0ny7zqozWZxk0Cbmz2ZP6tCBhGW54pNVhSGVxM4JPAx6TjU8F/vbl/XAaedzx3u+GbkaNV6ZCTBBbRE3uBJuAIQF9Uapwk4KapHtr/kpOQc1U6PSCV0A2XhfQr+235gMsD6bEc59+FEA/wrGmc4wZknjWhcK5nuD+ymZNofcamemYh4v3QyiWZe7lPzHyS+txOZnvgI6nneC8iBJkmuMyg+3e5P748OEoiM6oAXVYiDJBpAgYAqyAJcZjgQ4b62UNRDjibAwwcdChQBud4iKXyYzzAz06KiFnRWUIaBZzRYTbQUZLcknnI2qwmA8/oSGfNUKtggHM61lv9webqj3ZXf7i9LAQq4J5H1RccyugOTOglk77YSy7d/981H5GFwcx726viq15+NgiIxUGBy25+JAyLqZeLX/1sFPCDoGufXaVS9Wdw6TWIBZAZ9EEJF8EbQ+6Lz+Vdvh4yOzbF1IxamVJvmDLt8rtqdsu9/B7v9bSm2ZbV6Pq/IktmM+fF+/8AQUt/k0ESUn0AAAAASUVORK5CYII=" alt="" class="h-[70px] mb-5 pl-2">
+                    <p class="text-white text-base pl-2">Recharge</p>
+                    <p class="text-white text-base font-semibold pl-2">DTH</p>
+                    <p class="text-white text-base font-semibold pl-2">Connection ></p>
+                </div>
+                
+            </span>
+            <span class="mr-[44px]">
+                <div class=" hover:bg-bluehover w-36 rounded-lg p-4 hover:cursor-pointer" >
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAA2FBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////+iudUXT5UHRI4mW5zQ3OpFc6oXUJU2Z6MmXJzR3OrB0ONkiriiuNSxxNuDocaTrc1FcqrB0OKDosbg5/GiudSxxds1Z6Nzlr+Docfv9PhUf7Hv8/jg6PGSrc50lr+Srs2Trc6yxNxzlb+Src1Gg7ek6vtmq9EJdbQMyPQLls4nfbZn3PhHpNDR2+rQ3OmxxdxVfrH5IIlCAAAAFnRSTlMAIFBvj5+/38+vQDBg7xB/X3CAkKCwVBl+YQAAAAFvck5UAc+id5oAAAABc1JHQgCuzhzpAAAET0lEQVR42u1baVfiMBSlpU1KoUUoExVBoKIiOupQZ3H2ff7/PxpaQAfpkpsmBM+Z+03a+u5J3p68SkUEhlm1bEIpS0AdUrOqbr2yFRgNy/FYKjximYZS4b5rUVYAx3ZViXdtj3HBs0350utNTulLtbDl7oVLGAziahWfLMOeVvEJhfLKYJQQH6NWThf8JiuNpl9i9SmTACqqjb7FJMES233KpIEKaMKexyTCa6HyLSYZTWz7a0w6aoA1GA5TAH5FkKl+IgxUyedloE4+HwOV8nkY+ErlzzO2IluoMcWo5ctvMuXIDQxVtgXk5EmGtw0CXrYiUrYVUH9bAQhUA5dtDa4OD1C4CU22RbRTLIBtFZuWYPN+un9wmI7uEVK4PZVvcn/aPcxCr4we8mtgP5PAMRNfggb/l/uDDPn9YQlTBE1wtLbg4fyvE7x8L+ODZBBYWwKigwAp4QOkEGB13AfIJdAWD8NyCHi4E/qXwPH45DTG2fhckMCDGtpCBNYhRMBeEoATsUlvMxBciOyBL+QEpr30WHQpugfgDlwto2H/ZXgd60B4vooO+CIECQGsFr9ZRr7R7eNvw3ARH17N0MwI90I3S/FPfo5u8IC8yksgI7xK5NylPImSRXgNEmjMCQSI/sXZSH+U+mzB4A2uBEggin3e4SjjYcKgj6mBg3mBUb6uR33YFObeuA68HvvcQYGGgktgIG5oGi9AXuo7w5fArLT4X35baGg3sCm2ECOId2A/941ZvEYzzAyAnkz836Niju+wgMhvhUcFKhjjfv7OeywxdCAj7HGoSYhFA/507CQONxzvgAQYRCCUTYD9JwAS+PAxH59UE/j8JR9fnyEBqpcA6ge+fc/HD5SAA7hiJVZAKh29BF4A4VgJgQBISJQQaAFlgRICLlAYKSFQB9JyFQQ8pDZVQYAgpZkKAgHSpVVBwETK87GCnNBAmnRR3IfhyIpPsdqUXwl4qg6wLrCxJtV5YdI/5ahdNptUPq8nKK78LrFji1WrtIPswSTvhW5h9ZiyA+AedGf5SzSIMCOEWqWj/D7UBGwW0odueZv3k/s8EUkHa3CL7wDQppkNshn87OZ1sDK9EHhkM0zasuF088kF3K0lQodWCwb963UKs8su3i1eO7fjz42Hy2PD3unkV5RgfBYeCHSrqejdgSjz4PI3VBI9uUpCgE/Tz06vb5n4AqCnFncb4v9EDMPGhV8CfX7fXUcPlW/v3gUGfncoA+1dvMSi/RoPdnZSCoGmu4RZLmCHLrMhV0nEkXvJOtBjgTt0pbPiOzo8wC5d69V/sVn/1W79l9tVMXCAOQ/dAw4qsoMAHTJpyR1yaTy/MR+ZgSEQnfbSPOoVW4MEXWyXGHaLNaFTTjwpP/ppltgHSWOfDapV/A4MvS50AVoGr61gENzscA8+qxu+7hRmbDRw/YpKGGZAsobfnaChdvj9sa/nVoMacVbj/5TYQVVw8P4vVreBzK0H13EAAAAASUVORK5CYII=" alt="" class="h-[70px] mb-5 pl-2">
+                    <p class="text-white text-base pl-2">Book</p>
+                    <p class="text-white text-base font-semibold pl-2">Gas</p>
+                    <p class="text-white text-base font-semibold pl-2">Cylinder ></p>
+                </div>
+                
+            </span>
+            <span class="mr-[44px]">
+                <div class=" hover:bg-bluehover w-36 rounded-lg p-4 hover:cursor-pointer" >
+                    <img src="data:image/png;base64,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" alt="" class="h-[70px] mb-5 pl-2">
+                    <p class="text-white text-base pl-2">Pay</p>
+                    <p class="text-white text-base font-semibold pl-2">Broadband &</p>
+                    <p class="text-white text-base font-semibold pl-2">Landline Bill ></p>
+                </div>
+                
+            </span>
+            <span class="mr-[44px]">
+                <div class=" hover:bg-bluehover w-36 rounded-lg p-4 hover:cursor-pointer" >
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAADwCAMAAAAJixmgAAAA8FBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////v8faQocFAX5QQNnkAKXAwUYtQbJ3f5O2gr8qAlLggRILP1uRgeqa/ydvv8vafr8lwh6+/7vxw2PgwxvQQv/MAuvIgw/Rg1Pff9/6v6fsQvvPP8v1w2PeA3Pif5fpAy/Zw2fig5ftAy/UgwvTf9v7Q1+Qwx/Xv+/6Q4fqA3fnf9v1/3flQ0PevvNNgeaavvNLP1+Sfr8pwhq+gr8m/ydx/lLdfeaWPosCQocA/SNRRAAAAFnRSTlMAIEBgcJCfr7/fz4BQEO9/MNCPb6CwxBfIywAAAAFvck5UAc+id5oAAAiZSURBVHja5Z3pdts2EIUt7pREWk5i2vIWq7GT2JGduG3aJum+JW3S9v3fpmYoiqskErgDDsT7y8fnGAefAVwMBgSws6NKA8O0bMf1fN+PFvL9oec59mhsDJRVQ4ECw7LdJeQq+Z5tGUHXdZVmHVubUYvYI22pA9NuxZpp6Iy16+KGPRSDXULbRtcMjRWYTihHmyh0TQ16d2B6ENqFXLNroPUybCRt0s4O274d7MJpE/kmRw8zXBraROyaeexR4sYaMhrNwa7ghNtOPhNksqHLFFkdLgtkU0lnZoNskFtVLfKkI9wB6US0Tk4n87LawVtUuKsc19jrDjeWr7aRgwfd4sZ6oHApZSj35jqpMy8GzZtIzUgedDx681Ixkh92aM5VhRYxLge3KorWuwYs3Kooym5tsOrOS+IxFe9u12irROTW7IZvpgcEuEEnK6OmGsKti6Nd5YW2Lu68aOIJe14s8YTldFRWOOkXL45YF14UsT68GOKBRrwIYv7zUVGyXq0bryxxoB3vPbFMlMkom9Ncnjgv4/XROgmvndiufzdJcH087rre4hL6QEI/g84UCli1jgadScCqNTWsVK2N62HXNZZVywy9XhF0nVoOY60HcKJhG15tZ+C8WgzjSdd1xajxbKz3jJSp8dyk+YyUqWGnHnRdT5yadeot6dCxGjk1xqEPDqdHx8I6OT08g1Rj1KBDQ0KOxxK0KfRjQD0ahB+PELzn0rixZl/I18TdxAuZgg8hvPc6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" alt="" class="h-[70px] mb-5 pl-2">
+                    <p class="text-white text-base pl-2">Pay</p>
+                    <p class="text-white text-base font-semibold pl-2">Education</p>
+                    <p class="text-white text-base font-semibold pl-2">Fees ></p>
+                </div>
+                
+            </span>
+            <span class="mr-[44px]">
+                <div class=" hover:bg-bluehover w-36 rounded-lg p-4 hover:cursor-pointer" >
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAMAAABlApw1AAABRFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////8HRI4MyPQmW5zf5/EXT5Xg6PGiudVkirhFc6qSrc7u8/jv9Pgqz/XB0OODosbg+P6F5PoLt+fB0OKDocdlirihudVzlr8bzPWxxNxVfrFJ1vdGc6rR3OrC8fyU5/tn3fju+/4LwO2j6vt24fk2Z6N0lb+z7vt0lr/w+/7h+P5Y2vgUseEKpdkxpdWEstMKkMk1Z6MHVJuV5/sby/VnvN8qrtyTvdp1rNFNos8pnc8jlMkJg7/w/P460vbC2OmjyeGiwdwaq9t1t9lIrNeTtdQIZac2aKMHTJTS9f3Q9f060/Y50vZ22PIqvumyzOJXsNdmq9I5mclkkr9Whrg3b6k3aKMIXaF2BQSsAAAAFHRSTlMA3yAQ7l+fj79v7zBAUM+Af66vT34ERhYAAAieSURBVHja1NbhdoMgDAVgQlQgSGfdff9n3XH70fWsddWiJN8TJIebBFcf55LCMEciwTchinH4SCWz041zClGwQmJIo1OJ+3DBiy6heKcJj4Gw0WUoTgdOUbDP3Dd/CO4j3hJ719AYBG+TodFUc4qohBo8A0+Cimjw7kw+CGo7sQU/YGG1hV/hMdnCJDgQJXeskXAw+nTH4RkPWclREqxSfhZ8xHMGHqEIVqh/BA44WeCq8SGcjirGqBc00FWL0YRGJkPL/7Er24z/DXnb9b/fQRY0Rtl2/UCXra3PP/rd9UOJnR1kaNFlq/m/dWBvf97rvO36t98DVlY/QOy2mKHO1cT/c81k8ADsPAde0QK9X0VWB3jjIAeoFQwPwI9i74JtHoMBqkXTAVokywFadGw5QP9+KQoMGN1z6gO0IPdUQl1fvJrdbtNAEIWT2DQJjRoJxuusE8d1/iEhbUoRDajihlIuuKC3FRISN4j3fwGgsb1bNmK1pzv93sAz35zdnSQbpjKKrpY98kr3kSY4G8uoYOD1E8LgUSZ4KCNF3Ccv/LcFDfLIPI3uE3tsQtjgbkA2iBQMHh1wNUDJr2DxqMHZgHmsVX1EyYDBoyZfA3qa/OmI/pLE3j0KA6YGZOOoQg6p5GXs26MuzyHc1+RfHpPC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" alt="" class="h-[70px] mb-5 pl-2">
+                    <p class="text-white text-base pl-2">All</p>
+                    <p class="text-white text-base font-semibold pl-2">Payment</p>
+                    <p class="text-white text-base font-semibold pl-2">Services ></p>
+                </div>
+                
+            </span>
+            
+            
+        </div>
+    </section>
+    <!-- section 2 -->
+    <section class="bg-dblue w-full h-[400px]">
+        <div class=" p-[65px] text-white font-sans text-4xl font-bold ">
+            Book & Buy on Paytm.
+        </div>
+        <div class="pl-[80px] flex justify-between pr-[80px]">
+            <span class="mr-[44px] pl-[40px] ">
+                <div class=" hover:bg-bhover w-36 rounded-lg p-4  hover:cursor-pointer" >
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAMAAABlApw1AAAAulBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////8HRI4MyPRkirnB0OOiuNTg6PEmW5wIRY5GdKrv9PgXT5Vzlr+DosdFcqpFc6qF4/qTrc2Trc41Z6Pw+/7Q3Oqm6/ve+P4u0PYbzPWxxNyU5/p34flJ1fY2ZqPC8fxY2fiSrs1WgLFUfrGww9tzOMyEAAAAGXRSTlMA3yAQ7o+/X+8wgECfUHBvns+uoK9PXu1ukaDxiAAABotJREFUeNrU1ltygzAMBVDLwkbmEU8S+nH3v9EO7UeaaUILGCydFUjjK8muPE5jDsMUiQRfhCjGoctjYqcbpxyiYIHEkHunErfhin+6htE7TbgPhJWuw+h04BwF20xt9YfgNmKX2LqK+iDYTYZKU805ohCq8AzcCQqiwbsz+SAo7cQW/B0zqy38CI/JFjrBgejijtUTDkYf7jg84SUrOcqCRcrPgo94z8AjjIIF6h+BA04WuGh8CKejgjFqBRU0xWLUoZLO0PJ/7cY24/9A3nb9+ztIgsoo2a4faJK19flLu7l+KLGxgwQtmmQ1/48O7O3PZ423Xf/6e8DK6geI3RoT1LmZ+H8u6QwegI3nwCtaoM+ryOoArxzkALWC4QH4Ntq7YKvH4A7VoukAzS6WAzRr2HKA/vxSjDCgd++pD9CM3FsZp/hkz252E4ehKACbJlB+NFGrmVkcK47TOj8IEBsWSDOd93+tURraCJlgcW5KqdRvySpX1/dch2yrZaH1Js3AmX/qBJsy129yroQ4+qwJdlla6CMlGPOeBuBD2dVS+1IQ4rurN8BUG33aHxAertoAZ8pC93qyINxdrQFutfSfvq4MXHYY5r8gjK/TgG3lH/uiXrtDbZv2B4fLxdFwDQjnZadIjcM72/YmA2E+0BIO52UnLw2OlYIgiiTXaCIv67WFJ2vbAkZCN+DyvCzSzOEU1+bQFoSJOrIAJ5yXRWkc+tS6sQJjQYwwlZfnVLrxDMJxkkZTiNi+vAz4xwcp4ogYYSIv+5m3qp8MGPeqMwHJ7cJ5Ga66AmMywBZeF+G8RHhLrECJpCfILnvy8sItkVtQEuHnDJv7eRlgqlPjYsHpzhAoSy8vQ1uCGxcglEM/wMiCeRneEluILERbLD88hXHoELdqWrfLHkHIAgno5aU3LnIjSYi+6EYOT+hWva8MhhIJRmCvGzv0Ct+q5e4Fn5T0K+8kMLdq3pgcga4AeIi85D0KtkD7jBZHyFs1L+LfZfbeLYbPS95MKZWAUurGCw6ovJRL6BmG6V7I+/6FqAw+2ph/F3DtE5sr5GXgPjcFp9aNVJKXcrFSEUhr7aHzkhepGUhWa3Feys0EHya90NmsMtIOrN8qAavUw8kdOImag2X0gCpwxuonWFYP6Bmch/Nr4PYL+PXVC5ioEVj2sLWEalEBI3EBOYSMsIApzrj9AmKFc26/AHwX8F3A//bORjdtGAjAF8cxCgESskF3agtFtNOqjUFRi9r3f7FNHd6PlB1wh5tz4XsCf/LZhvjufBYgiUAg+m00+oMsegGHBPoFHH0/FoPAByQQCSyWK/QEE6ggQwKJwGp9+bBEGrlAl/5TLxG4v/zJAz0JcoEB/VlFJvDK0wIxoMAIcqSQC5BxJBfIIUUCmYDnZRVOIKU/7koFPPeLQAKW8XmdIUDEkVDA0RcccoE/vCxCCGSMKyamwOVjCIEBo/afK7AMIVAA44aDJ7AJEkKMi26ewDrMIh4yUg1YAk+BttGMkTHHENgEO8hGALsWgVxg/YgYSsDsSvxW/mNuuKuEWy6weUYMJ1DRqetCgWcfPeEERnTqt1AAV0s6euQCe6ROq/5T/xE8A2xAv0AHPCk2oF/A0On36gUcXQChX2BMl6CoF7B0OxL9AhVdhqVfoABP4zJWL5CAh30UTLmFhHIBv4RFy9gn735HGV9ZVcWJvK2Wz1u8QxHzG1YhUwYgn4LPvipewhWvINQco7HT3HcmuEYm8+tv23xBPIyK0RQgZNrfbIKHYaCBHhIQ8SuDXkf0BMhXwVRqwAsgNIz+fuEMZldzJCAnQH4WzO9mwvHfTvBAEnPUFovTyZfbGZebK0bWcfl+GyRBgREwAoIa1VMBRWpROYkBkgEqZww7cKiaCnZhVAeRD6Bom+WNT6Fhavwta9UuA2sib9s8Pp3G2Sp/UtSn1TxeXe/av0+wGLciznM0uSKDixwgaoP8NJ9x0WLg3yWLNYp8/DMNWt9NL/LTfs4Lon9QDSCtsTXq9Pyo4Csdi3uhZ/vUsBASc37a9B86bzoJdgRHx/TwzXDb8Il0EmwJnignoU4hHP3wj4wXEJZBUAXbhQaiiSPbbYyeaBQqA/8hBgWbMYYvUkhiDJ5Ax4L7lEIrFD17jNgpoEU6DkW4TgotYzo18rCubH30W/q9IR5IkhVaRv8L08/2lhhm7QdOM0WZOUtHTVbmSgf/mzTvl93KuSTZutgkcXWVlf0QQ/8B+WYmB4IOAgAAAAAASUVORK5CYII=" alt="" class="h-[70px] mb-5 pl-2">
+                    <p class="text-white text-lg font-bold pl-2">Movie</p>
+                    <p class="text-white text-lg font-bold pl-2">Tickets ></p>
+                </div>
+                
+            </span>
+            <span class="mr-[44px]">
+                <div class=" hover:bg-bhover w-36 rounded-lg p-4 hover:cursor-pointer" >
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAMAAABlApw1AAAAxlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////8HRI4MyPTf5/Hg6PEnXJzB0OMmW5xFcqrv9PgXUJXC8fxkiriTrc7R3OqDosZFc6pVfrE1Z6OxxNwIRI6DoceiudVzlr8IRY50lr/w/P6huNRt3/kt0PaiudTg+P7R9f2L5ftT2PjAz+M3Z6Ok6vsbzPXf5vFGdKrf+P6j6vvKLz13AAAAF3RSTlMAIBDdX+6fv2/vMN9Qj0CQz4B/rq/tjkomuMIAAAbqSURBVHja1NZbcoMwDAVQWwa/g1PC5O5/px3aj6TThBYwWDorkMZXklV9FLMvdnIpBXwJKTlnP3yOpHij6IsLWBBc8YNiibpyxT9dS9aKExpKwkpXmxUP5F3ANlPX/CGoc9jFdaqhoQTsFmyjqSbvUIlp8Aw0BlSUrFZn0iWgthNb0BYzqS08hUdkC2PAgZJXxxoSDmayOg5NeElKjnzAIuZnQTu8J+ARcsAC9o9AF5zsTlXjk3A6UzFGXUADfbUYjWhkFLT8X7uRzPg/GC27/v0dxIDGTJRdP9BHaevzl25z/WBiYwcRXPRRav4fHcjbnz/1Wnb96+8BMasfMKTWmMDOTcT/c8ko8ABsPAea0QJ91mupA7xykC9g6y54AL5leRds9RhYsOZEB2jmJQdo1pPkAP35pcgQYFDvsQ/QzKi3PET4pM7edhMEwiAA41rqIcVq0mQWFISIilZNrMcm9f1fq0KKC6b16p8m+916s5PZn11wYO8El3Ns7wQ/rKABW7gNuwsAnu0u4KphdwGAZ3kBcJXdBQADOw9hw1W2XaPvte0uAGg5NT1wpInOAlD0/mOED/pqDgrPqVAdUIx1bgoGV9FHuAwQguLJMVpgIAdo0U9hcgAo9g5iB2iz/85gBzB7CBzsAK4if0xhB0CPfBElBzBnWR8c9ABN8kOUHgCKOwLsAOVh/AoSfgCPOwL8AH3uKcAPUAxBDzT8AF3uJ2l+gDZ3hvkBPOK7AOIwjXRusgzAUdznOmCI03mijWhCeq90HAWCeJboe4sDCJTThTiz/LpRAHFdwkViGum/zCDtRf4pmuoHFtIltJ0BZK30TZLNPsJwmW4WvG3kSb/NmPVnIW6G64iU4Fn2GDDrz4aou0UYxRD0JhsgKDfP8pffsjIbBLVEv6vHkS5EQ5SOxy1Qr+c9hZymaIBVff3b896/unx+1X9PYohpSt4kgtr6tzv/Zv8TYSN+HLgO5Ex0YY3cae9XnVFYiFcgFcAUMEHudPHrdsiFUhUwAhx0YVjM7t6/d660lECAeIBxpYBvbu5wt00YCACwmygkqtJ0labdpRCCC5QkNIFk6qY1Ure9/0stEpXOA9wzzEhzv5+Vavmw7+yAgeY/+aUMwQossBxApHTt27LFDwrTwhyyGwBd25AGoOFIe70N2GKvjKo9owxQ/YaLlOK0YWJvITvQ3DguW31VZloEFthbiam+nODiYUkaSRBSrbJgbG0zp95COT60+j5AAFNbz8coAIb1ADwwcc/b0BTSogBe7t/4WmDCE7cm3c/QVAIcZHT7/XwnZsCL0VgMjBSN/QTeTMyBh+ZCYDyjMQm8ubgGnkRTfBZv0FgAvGsxAl6So7FHJp3QRlNkZHZzd58FComqkP7M/Vih7bSuLcU6Ad6k1+31LapWte1oaTAAsbp6kGIFHU3ZBxz8LDjUO5Py9czXtFVCRzd9HjHt8C9ZbUONYQQ6TzQA9C+KM3Q06/Pu/6m23jSu71YXwR4rvq6tADpaCP4Jh/kIQCTfjWDfrC47Zuni9HrQHelygPoTvkLToeUyR/+WA5/6HTVYo8oHRamt4S9bbNx3bFQhH7q56XdiLs2RHDTbpvD5Ve1+hm9kCipfIomho7kQTBKwK/M20m/8ssddetkwp6dYYq3/JEFtW7yrvge/d0EVQhFHzVKZo16QNtsKsbJptsWnQN/zNv4+k0VQrqBFIlEjz6LWttYSw8MKOvMGOrruxwW2kQnYNR/s6Pcqa4SQy6cILBvy6HQaB0VOvS+yJALbPg/8EmialNk5CILzptxFMAA6vj4CJ12px+8dNHX5HaZqBpHRf/o1lfdMhOoWnOMJ1QKcsxAXDqfx2M3vAdRS2OE0Hou6O3DKFyHcHoJqFXa3knof8aMALr2U7okLl7OgGgB3C5EnhNNDML4SwukhmAmtMTjgT3n3luMwCEMB9BpjQBFEnaAR+9/pfJRWmmna6SMptnpWYCuXR34M4xd7l9KMG2pTL+AWJ0254wo2PGbL44KpP5uA/5DqEJ0CZHZYnjc+MLXgHk7tcdZH1ppdBkKfMrZZ6a1uwR/GrhQVndGFzA4PIWUdMOHM4lbEhIdNijr4ngDTHUyf+YyLlg6k1281RT3/T5qG76aX9ds6D5gAyx0w4WWutmGqw3UG7qYLNuKl3UXP9qlhITDZftq0OGzLc3sjyej0Py2+Jvb4GP0IknBi8iNUh/1kbjvjGftKu7YgC1aYyZEsDivMtBAIV1hoQQrhnSiwxfDsdCzE5DDEHGSL7MwYyMf2kugdBiNf23MkpuHVdzkc2oO4zFqqP6Jc7m7iUMYHZ92cSpTbqSlpUlr8mZty+goxMkuvmjnWUFLeo/QfE0NA6U2WBOUAAAAASUVORK5CYII=" alt="" class="h-[70px] mb-5 pl-2">
+                    <p class="text-white text-lg font-bold pl-2">Flight</p>
+                    <p class="text-white text-lg font-bold pl-2">Tickets ></p>
+                </div>
+                
+            </span>
+            <span class="mr-[44px]">
+                <div class=" hover:bg-bhover w-36 rounded-lg p-4 hover:cursor-pointer" >
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAMAAABlApw1AAAAw1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////8HRI4MyPQmXJzg6PGCocaDocaiudVFc6rB0OMqz/UXUJXw/P7g+P6m6/vv8/hJ1vdkirjf5/HR9f2Trc5zlr9t3vgbzPWxxNyF4/lY2fjQ3OqSrc7C8fzv9PhVf7E2Z6PB8fyF5PrR3OqTrs5UfrE3aKMWT5U60vXJ7bIxAAAAGHRSTlMAIBDe7l+Pv59v7zDfQFCAf66gr0/Pzm5Dyh3dAAAGg0lEQVR42uzZ7WrbMBQGYFm2pVj+SNY04zUOcUJ/lJUUCi1lsLHd/12NtFlNaH1afTTWgT4XYOuNzjmyHRGeLJtCzZa6qgyemKrSejYvmlKKuMmyUNqAYLQqahElmasVPmilmkTERNaqgqXVrBFxkIU2cLPMJ98ImWt40bmYUK0MvJnZRF0tC41A0gm2QS4MAqpm5+2GRBmEdsYIyQUOuEYYigcsI1DL91cV4nPVFT5Zeik+j1ziTVzqqDAgRX4sJBrjGGxCY0CIfhOkwpkpGbR8KpxdGrCMcoMJZMHKaIGJLBgN/7d9kzzLf5AmvNfvn6A0mFha8l4/kJXcxucrufP6EQnHBCVikZVc639IwG9+nsoS3uu3Pw9kZOsHUilsLBGdbyyePykLhgeA43GQRDRAT0cR1wa2bGSFaCnGDfCs4XeCWbfBBaKmWRfQQcG5gA4yybmA3n2kaMBALcZFX0AHqRhVwMXudtu1Drrt7Q4u5kE7uP/Zeuh62MtkuA7eda2n7gYEqy1IYG3fBrCBrSwJtAGbtp0mwSzMBmzaQH7DVhJiA27ao+1+/Qh7v/qXBtrBkgqxAcfb/72Ds/8ROljKpP8G9Md7r+Hh5pigh6W5/yHcWayfSHDVHvyBpUz6Pkbvhp/Oy51jFxS+G3D7XvHuNoM9cVpt3UapFidqEIj79h+csd09xjw8TzLYqj1aeGiBe2LGDsgF3lvModFJKg1stU+IFhnQC7wmrkTJJNnCvgGur9oTP1yuRMvFQIPgdtuH0w1Yhw+gqVPYPwDW+82L/hHhA0BSFeQa4JxXKqi/MzgEGGoIr3EIkEniYwqHAKipU4xDACWerfAGDgFSaohyCABJtQCHADn1lxKHAIpqAQ4BvlOnAIcAkNS7DIcAJfVJmkOAguphDgEU9S7AIYAWQhiM4BAgE0JiDIcAkKLEKA4BSupBgkOAS2qKcghQiDlGcQigqLcZDgFm1DHAIcCSewBNfVfnECDlH8CARt92HYBXgEzAURsYHH0F+Arwj51z62kWCMIwjRp788WLz5jZaWtwOZQGpQetxrP//1cZbWQScdf4ziRC4nPdAi/DDsuc/gQAiICJAToBcTfa//fA/vBfZIMXMPjNXCQ/NgwBg/+giQTmhiDgaPgf9ZZhlbyuKYT85rawDKsYBrZuK2ZeNkX08u+WzOxLu8CWXWix5B0+oqDwvOPOLLRoFtwt+AOfUwjPH5RGwV278HrFLWsKUHLL0ii8bpbgyFmoKMCGhdomwWGWYtqy4ClAxUJplWKC3FD3tPXvCPiXgBmO7iO05JYNBWhYKEwEGCa6m87N7bLtiNQmug1LDfLWRTYUZN06ocKw1OCAosQFdF9SVU7fKvA1mQg4ThJgEQRPW1beb7YUpWhefLXOyUbA6LvC757vRk80LdyZe2NKKqT0OCOAMVq6LsXfZ6RCqqyfCOAYKP1uWbg3LkiFHOiGAODSaemBy+aEInX6aCfIf1UT6Nxhd65rAGQxScUc7kgf3TszUjFz7ywIYJSonqF7Z6Bg5nADHGpHAVy4HZMVgZylzuG+4ABrQRHmbSfx5GYGsHhu/08A+/pxJNOJ0wM3042hNixcgf7647MBDglhmjo1KXb9e9p5ANKPqiJ7IABZwvgyFgkKK6Tn14QgBhCOCGb1+a6eBhBr4fsH+RaDTYB37aV2AkY/H+zUKwHjnw8F6JeAUfIFY4rRKwFiAJNVcNkREN3ACisCEAOAjgjvXJUmaXwPKgbATYB3rs7Fj2ITPWTypcYE8RE3WWxrMF1kovOKEOJjtvZoALy2d3e7CcMwFICPYzc/iloaCTG//5PuYgVpGxQYlNhi3xP4qCdJrxLGZaM6sMeKpuZlrAmixjFhVVHjBlyR1LSMa8h0iY4FcntZ3vAOF6YimD3Olitr3S4DoXe5thnYqUEzfnD2S9GwcLqQOeAuZCwBE048bkVMuFs1lEAq4DpBfc9nXKwkkGV+ry2SigfU7rvp7/l9nQdMgOcETHhYaNpNC7jMwb/pjCcZRG9jZvu0sBCY/p82/WZgfSHZ4+ko68ukpT5OP4IUHLn8CC1gOxPrxnjEtsqmEWTGGW56JHPAGW4iZMIFHiJIJLwSZfZYno2OhfQR0MWY5RndGdHRkPQhaQjojIamfyOpdJ9+MeWD3onjaGX6LzTFm0McYv/inDeWmGS9NbFUo8OfhDqVXU6JeckizKnlWKYtRv8EP0OtTHgk//4AAAAASUVORK5CYII=" alt="" class="h-[70px] mb-5 pl-2">
+                    <p class="text-white text-lg font-bold pl-2">Bus</p>
+                    <p class="text-white text-lg font-bold pl-2">Tickets ></p>
+                </div>
+                
+            </span>
+            <span class="mr-[44px]">
+                <div class=" hover:bg-bhover w-36 rounded-lg p-4 hover:cursor-pointer" >
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAMAAABlApw1AAAAvVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////8HRI4MyPTB0OPv8/gXUJUmW5zg6PGDocfg5/GiudVzlr9Fc6pkirg1Z6NVf7EXT5WSrc5FcqonXJzQ3OqxxNyTrc5u3/grz/XC8fzh+P7R3OpY2fhJ1veq7PvP2+qG5PpGdKrw/P7R9P2V5/p0l7/R2+rTIm3AAAAAGHRSTlMA3yAQ7o/vnzBQYL5fQL9wb57PgH+ur+08881KAAAILElEQVR42tTWW3KDMAwFUMvCrxQcT0qYu/+Vdmg/kk6TNIDB0lmBNLqSberjmIoLUyby+OaJcg6fJUU2snEsLnu84LMrgxGJT+6CN11cskYSHhxhoUtIRgYu2WOdqW8+CD5lbJJ709DgPDbzodFWc8mohBqMgUePiihYcyTrPGo7sAUbMNPawl14VLYweuyIzmZfA2FnlMx+eMJDWnJUPF4S/izYjOcUDCF5vCB+COxwMMdV40M4HFWMUe/RQFctRiMaGRUd/8eurDP+N2R117+9g+jRGEXd9QNd1HY+/+hX1w8hVnYQIUUXteb/1oG++/lbZ3XXv/w9YGH1A8RmiQniXFX8Pyv9TU8QqTdvsoIO6L3Oal3ghYvsIJZTvAA/kr4XbPEaBIj2oTpAs7PmAM061hygf78UCQoM5jnxAZqReapgsy9a7XWnbSCIAnDADmpBNIJI1dn4svYGG+OGAOFSqkp9/8eqTIFxYxsnzNnvf6Qdz8xe8+fCjChzKM09dnBemVE/YuiEgb8OXpsdOCjNBxIAhX0CuIZSeOhtCo2THUrIQuuMnQBxX5oR9T30Dr2uYbF5EaPlp2kkIJn6SIBITWOFFmcav0ASBl43EZemcYWWpWkswTL3tgjLaAu0lDL/UISBz230tWmUaDEvLGhm/AQI2+nYiNvD3ZPNKaiS7S6+Mo1LEJ36PAfUsmVot3UGju5MGhyBpTvnSA9HIAoDTy0ss/4F0FnaiI4n4huYul0cybTEc0JehYV0sY0aFpn0MFHgp4Kki0UlSzPRzNtzRrxOTQc/AKkhUOXLyvRLHZjCwMdlSl4Y4TmEUw+rWFaNncdykMhadg6WvNz64GVd16XERF6PD9iT6Lo11KpwFq/iaF17SULAbYFMRn8ZYYt1qSRmBY5j6pPS8n34WYw+0XsICSmCKbEFZPy1xRCXciM4p60CUj/VFT5gi7cIcjAEtLPM+q28LT6WUTu5+RvODAS5+ae0GOOM4V2xzFg9nL6OP8Y4R9waTUlngUzqZweO0QaynzuCjhRQZbGbjFZE4WQSQK/Y996/NqwzcqD+b6IkoMDO8oSVgi+MjUSx/7VbxkrBV8Ismn9ikxknpFPybDKHlhtMwN3zw+3t48PTZigFSQylKeE0Uw50wN3j4s3NZiAFDkpnymVAKmiFLc+Lltvf2LLk1NB3XQBSQSm23Cz+146AeF99orxXl9eMge8vNr01tILOgT6Auu/tZbPoeOz9nYPOgX4nIV+yt4DEHQTt1SycQCk2LzoJGE2Bk9LTUAew6rt4flr06eviCygQApBxdCtopI2tzF4KngL4y84Z9qYNA2GYUSoNMamjlSZbjp0EHEiI6MJgILHu//+tSdXKC8o5Ir5jk6o+39pPDuc7v3e+8478gM3HB/znLfSLdB4m3DBK/5Av/8yJR+yDLKUkwZFa/44IowwxJHYSW0pMQ4iC/S0Osk9sMUe3cWza628CEoTHhH8/hl+y241/BCQIj0lEQhMnp/e3kdNTZmEOYsh0JzQbshLAT2ieBJL6VcAb9w1SyuOtUsoHZlmlOz/ffP/ZNM3u5dhRCWAyFihsJTF3dw5imsVnidLiqkeJRLqwdSdR3DW6r0PmJUIXi5FMeX3VtyfaoxrMYyJzwbHtWfDPYDIm9xJXTLihdNe5wUyLNWE+CM3+J32umA4iPQdo97hTAiyuny9Zl4INRFIX3XN0EeSqm0oDdhh9FGo1yDSwnaElKTTg3/Pdy3TMrfUFRXhV6Jao4fYMxoMB2wkwuWTREZTTy/cwU2olQulQovE7d2/TVdmZFUxr81QeO2erlBEIRY8iI9wel9yVBq5YH06LP1T+r5nQj1DxQ9GU37oOB96+lihqfU658L7wC6cvmCcIXbyscsxu/cb6K/zdTW0goRB542C3TlM7OS10B/a8mSupcX7H8G3wCkcO5Y6IJanTIfzlUlOrGXkNHsqIDqSJI8c7bfgDggaMYchuvy8QgNoFk7m32PjLOT1BkDE0xYQ/AIEARBdMEmPMzJg0OSXBFaGiYiuMX/gjKJYUNA7ZVmulPhDFfqvejASeI8k0UePP6WzFkJn/IT63mUqMYS2IDfCMjyIqWYaIYhFOjNZ1jhsjDroqDxbqwv83voxUdGj85h4FUD/LdbhUCsugkpJnJWdCGi7MlBPLc/mWn5IDp0IFvBTSNH7GHgYAT6onOMuAn6kieLau3gKpwYxKRARCLiZjgu2lAHUlflQyZvnMtU7nCIZyDzslM69b5KTwa2PnRsUwlX0UIC1qHYN/TlQcQ/FnGWCGa7FZqiKAARhewDeDXRrFAAaQCERgtrzx1oEBZE0A0owyA99vAV6+lDUBMEXX6r1RbL6+3weS/rR3t7kNgzAYgF/AqBCCStqgcP+TTprSaZEy2q5l2MqeE9iy+fhlIxYBPCpyYW9CjaHCnNKoOhfmRtwRCmsT7tGsm+jWQGKH5Y1HGJgqf2Qt22NA+ihjm4FrYWgGtoR9KfKxhsezm137/QWTeBUpjac5RhksDhCdwSZ+gVP8R0ByBrTGL7WLFocXuO636eKOvc4L4heqASaXXuor7QT8TWe8yUDlIXyuTw4HQen/1aYbw58WgTw+SVgtvies7SO0CJRwI7II2aAd37wIKqKtc9MUaMYOMX1Es8EOMSlMGj+QkALZavgNUlASm6fRsxCSQRfxRO/onYiOhlBeEgaDzvSQy+9QSN2jX/nTpTxJ2cgl+rUQ3j6cxMX2b5x9MdlA9a6xyTEN/otxPl2nEJSiNWqlQp5s8i1C/wAyKrrFnhHv8QAAAABJRU5ErkJggg==" alt="" class="h-[70px] mb-5 pl-2">
+                    <p class="text-white text-lg font-bold pl-2">Train</p>
+                    <p class="text-white text-lg font-bold pl-2">Tickets ></p>
+                </div>
+                
+            </span>
+            <span class="mr-[44px]">
+                <div class=" hover:bg-bhover w-36 rounded-lg p-4 hover:cursor-pointer" >
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADBCAMAAACuXk+QAAAA2FBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////v+/5n3fkbzPWG5PoMyPSF5Prw/P4qz/Xh+P4LuOfv9PixxduTrc5kirg1Z6MmW5wHRI5Fc6rB0OJzlr8XT5WDosaiudXg6PHR3OoXUJWyxNxVfrEmXJxFcqrB0OODocdUf7EWUJWxxdySrc6Srs3Q3OqiudRzlb/w8/iyxNvQ3eqDocaSrc3Q3Ok2Z6M1ZqOKwUdlAAAAF3RSTlMAECBQYHCAn7+vQDDP75Dff49v0F+gsDYjwnQAAAABb3JOVAHPoneaAAAAAXNSR0IArs4c6QAACDlJREFUeNrtXVt72kYQtcRFgC1kN41p0rRNMVg2OAgchHHTOG3dNP//HxXd0Ap027lo1/16XvxiiXN2Z2Yvs5o9Ofkf/0EYZqvd6VqW1QvRt6xupz04NVTzqgGz3bXO7FEB7F6/2zpVzbEIRmvYK6SelTFsmarZHpN36nBPcWa1tLEoo9OTI5+g19agI8Ds445Qq8Foodgn/aCKvnley2er4VgqumFA0Pgp+oMXTT/shiYtqXVGTb9RCfSt36gEPvoBetzubFxw0g/AG5G+IwqcZWC0I5PVelKcMXVCE80f4/wFN38Eh7wTGmz+EDatJ/AHn2NcEK4XTMnVCg3ozGjQsPnsFbRo+J+roR/gnIK/AvNPcYGmbzQaPY/RR7qy+Uotf+ywrCb8ZIEJRjrwxyjQgz9cgS78oQr04Q9TYGjEfxeL5KOp8viZRU+Wv9LxNw+WHH+F858inMvwb6tmm4fv6/M3Fc2fy2HXDkU6BVARTt1Q9Fo10yL0X6wDJ+jUMiDVLEtg18nRauoAEWq4gcYGFKByjamzAYWoykVpbUABKoxIcwMK0H3RBjSqGJCph7Af3rx9+yO1gpKZNfkc7s27HX6ifmuxH1N78M8B/3e/UAtwGuuA9zwCCmcU5CGUS4CdH0rpQyiXgPxQyrAKeP/u1x0YBOR2AakHjK8m02v3JoZ7O53MxpTvz+sCsg4YX8331EVcz2dkAnK6gKgDxrPbu5tC3E2pNHR4OmD8oYR9bE4Lj+KXzg75twheupxW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" alt="" class="h-[70px] mb-5 pl-2">
+                    <p class="text-white text-lg font-bold pl-2">Buy</p>
+                    <p class="text-white text-lg font-bold pl-2">Insurance ></p>
+                </div>
+                
+            </span>
+            <span class="mr-[44px]">
+                <div class=" hover:bg-bhover w-36 rounded-lg p-4 hover:cursor-pointer" >
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAMAAABlApw1AAAAzFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////8HRI4MyPQmW5zg6PH+/v8IRY5zlr/B0OODosfu8/gXT5VkirlGc6pVf7KiudU2Z6Mqz/WTrc6hudQnXJyhuNRFcqrv9PjQ3Oqk6vvg+P6F5PqxxNwNyPSSrc0bzPXR3Orw/P7R9f1n3fjA0ONJ1vfC8fzAz+Kz7vuU5/tY2vg50/Z24Ph1lr/iKsYUAAAAFnRSTlMA7yAQ3o9vMN+AYL5fr0C/n1Cez6BPsTNbQgAACztJREFUeNrU1ltygzAMBVAL4QcUMB7Su/+ldmg/SqeBBDBYOiuQRleyTX7sk7NjH0MgfKMQYhwblzwb2dg7GwkbKFo3GJG4tRPeNNlUGUl4sAE7TWMyMrCLhGP6rvgguI04JXamoMESTqOx0Fazi8ikLjAGbggZhfHebagsIbcbW6gemGltYREelS00hAsFZ641BFys/jTX4R5PacmRI2wS/ixUEesUDCERNogfAlvczHLW+ATcrs4Yo45QAGWLUYNCGkXH/7medcZ/uQi66z/fgScUVnvd9QPktZ3Pf7rD9UOIgx14SEFea/5/O9B3P/+iSnf9+98DFlY/ULPZo4c4vYr/Z6a/aQuRurcXWNABXaJK6wLvXGQLsaziBfiR9L1gu9fgAdE+VAdo5jQHaEasOUAvvxQJCgxmnfgAzWqzyiGXL1rNtTtpIAjDIrYe9ahHPb6bXcyVEEq5Uy7lgG3V//+fBCew0AmYWdLnCzTth3k6szO7SaJg6qeZjtWGWDdTfxpEqIp3L7yCo26iVQFZ0jGoglr9BVdwNG2qMzTdHMql4DUuJmDRc9IJnGDzuPIERFOtSqE7uJCvL5GAm1hZXlrhdeUJCLRixD59JrpyhauKE2DSgvDDPugb+mFMVyZBa/+XiYE7tXqlCWjFitEzwE4AML3NlT7JJlUk4V2FQzjyD8LWivABK7AlpCtHCn4ER3gK3sMVo234QUcRIY4FCKZwa+DKdVUJmO/LR0/2MiGKBcar4bGCHsAFfrL5BEdaakfYB5J8VqFQoLH0PK/9TKEFRz5VsoRvVI6eA5jn302xwNjb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" alt="" class="h-[70px] mb-5 pl-2">
+                    <p class="text-white text-lg font-bold pl-2">International</p>
+                    <p class="text-white text-lg font-bold pl-2">Flights ></p>
+                </div>
+                
+            </span>
+            <span class="mr-[44px]">
+                <div class=" hover:bg-bhover w-36 rounded-lg p-4 hover:cursor-pointer" >
+                    <img src="data:image/webp;base64,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" alt="" class="h-[70px] mb-5 pl-2">
+                    <p class="text-white text-lg font-bold pl-2">Invest</p>
+                    <p class="text-white text-lg font-bold pl-2">In Stocks ></p>
+                </div>
+                
+            </span>
+            
+            
+        </div>
+    </section>
+    <!-- page 3 -->
+    <section class="bg-gray100 pl-[180px] pr-[180px]   pb-[130px] bg-opacity-30">
+        <div class="font-sans font-bold text-5xl pt-[120px]  mb-[35px]">
+            Paytm Payment Instruments
+        </div>
+        <div class="
+         pt-[80px]  flex h-[627px]"  >
+            <!--left section-->
+            <div class="  pl-[115px]   w-1/2 bg-white ">
+                <div class=" flex">
+                    <span>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACaCAMAAAAZ8LPUAAABzlBMVEUAAAD////39/v2+Pr2+Pv2+Pn1+Pr19/n09vr29/r09Pr19/r3+vz39//19fz19/r19vn1+fn29vrv///39/f09Pr0+vr1+Pr09/fy9fzz9/v29vj1+Pv09/r09/r3+fr09vrv7//09vj09vr19vj19vr19vr09/n1+fr19fn0+Pjz9vr09PT09fn1+Pny9Pr19/rn6vCyusyYobp+iadxfJ7AxtVWZIwhM2ilrcPa3uf2+Pv3+fvp7PKLlbEvQHFxfZ7b3+j5+vz+/v7///+dpr0vQHI9THusssb6+/zx8vV0f6GCjKv5+v32+PpLWYRZZo2QmbPHzNm5v9BYZo3+/v/4+fvj5eyCjKp0f6CnrsSepr2dpryzus08THqrssbn6/GQmbTx8vYuP3F+iah9iag7THq6v9BZZo66v8+eprzf9/2/7vvf9v1AzfUAvfIgxfSQ4vkgxfOf5voQwfNg1vav6vtf1fcwyfRQ0fZ1gKFnc5d1f6GA3vgNib4Mib4vP3EdRHkCtOkTb6QReK3o6/EPgLW0u80PgbYVZ5sEq+D4+vsfO3D29/oZVooKkscIms/5+/z4+vz9/v65v8/8/f1xfZ/a3ujn6vGzusyArDghAAAAMHRSTlMAEEBvj6/P3++/YJ9fIFDfr1CPECAwMO9gUEBwr79gn88QcJCwz++gn1BwkDCgr2APSvHzAAAAAW9yTlQBz6J3mgAAAAFzUkdCAK7OHOkAAAVVSURBVHja7Z37VxtFFMc3hEdi0KQlFUgtlqZo1VYXUyEIgoWB0FQbAtYkoiCItZW2aW19Pyo09dVatT7a/rfuzOzSZMluZndvdi7n5PsThxPufHLv3HnszF4URUiBtmB7R2dXSAVQqCvc0R5sC4i1LAL3RKQLAsyszkj3kwB0wXAz4AyFPTK2NZWOq+Mp985rSmR3K9rtii8IkhFNQ2zzyXsuEQMxf/GoIg7SZZ+P0XXhxEC7DDyq/T0ifPFOWXyaEwXCfEBKeHcIn27E1y0Tj6obOV8DQgR8toQo+GwID8gmM2SRKXGfZzdr9dYdbQJo+LTRpt6ILW3+qKf9u/n6ZDPVqh9vB+TqNQc5IpvIrA7UAaZK1AAiCzBVFLkDVfUgbgfW5AlKB1a7EKUDq3phv2wSKxmJ/IxsECuF9UlENoe1ejCnCBVPk0OyMawVRh5hHmPEEVbVAYzrmGo9qwEelg1hJ22sHpTNYK8eJSEbwV4J5YhsBHsdVJKyEeyVdD4RD7+aOvmaK51MjQw7be2ow3lkODWa9qTRsdcdNTjkYC04PvHG5JQ3PKY3T02MCzcaVZ4T/OT0DJmdA8DTlJknM9OCzfYqgh88TbJnYPCo3sqStwUbFgQ8S7I5w/pCfn7RlZby7xg2ctlzZ0EB3yU631w+SzyokM/ohESwHwoCni5yu0VPeAyxpEd5AhTwPW512Sse1fvc1geggCtwfISsMmMrHwICjjGTazB8hPD+MgkIyByYgeIj6yxTPoIDHGHfeBUMUA/yCBjgBqwDNbE56WMwQLZAKEECsrFmFAzwPGAKc81Si+fBAFmPWYQE/ISZRAy42AJsAbYA9xzg4nKpdGFHOWSA2bW6+y00gBcttoNYAPNWmzskgJZ8SADnjd3qbNVu9VM8gAW+z8zV/jmiYWZe36hrP25euoQQkDkwUyDk8pVyuXz1GjbAgrGdufxZmekaMkC+MtUceJ3zlW8gA+RdUPvhig5Y3kQK+DlSQB5iLYe/0PmuIgvxetrYEX7Ju+AmMkDCnllm6DB4/avyja85HyZAtgNOf2P6LSJA/qAo/W0BK6DOkk6fuVj1uHoZESD65Rb+BasW5QxyQEJWc8gBtWXNUr70WBfwAZqC3gJsAbYA/QdcQgyI/hgC/iDnO2oR7iCHHYVNfQ8oNjnDHYXxw8QfymC6yQzCHSaqP1J7W9tggFvU3opQ02KAk+wb34LiqzBzY4CAt1cgg/xTWtyBoncWfuYLuF/g+AQdKAo4XeRWf/3NK972LW5pDfZayh3jYs9WxRPiduUut7NAYAF/P7e+s2i/V/njT1e6Wbln2FjIzog1LAqo/kXWi2kwFQm5Lwooej3v/t9kNeMdjWruH/KvYIDVXicXHMdP/QeANzV5e9zJBcfDwp+lejDm9Ypo6qGjBsPOL9k+HEltuLtku5F65IxOpZds0V9TRn/RG/1VefQvG2B9qY5rSFGU52VD2OkY9leGaEUD1J0wvhdeW8M8EvKaFYhjHFdwv5p4VH87Fu1k8sJeeQEaa5o8LusyKLru91XVdQxelA1TTzV1cRD2wppCEBgT2VRYKCabx6xjpmop2PIkGjcXnEFWbKFO5aiXZDNVK7mbTxlElMnRujVQ42i64e4OyIWmMNhxxUIDssm4BhQFNaENHwpCWz4EhA34tEyROtqEjjfik1vDrDPemE8bsaXNKUnRGtV9UpwY2ieIR8N8wn++l52V+PbbidGEIzy/EUNHHOP5iRgNui7g3h9rPl7YeXBr0qWvqU9uwu6dV814YqgZcF2RVwBr8yeCydghqH8cMBRLBhOCcP8Dj7q7js9OXogAAAAASUVORK5CYII=" alt="" class="h-[90px] w-[92px]">
+                    </span>
+                    <span class="pt-6 leading-tight">
+                        <p class="font-sans font-bold">
+                            Paytm
+                        </p>
+                        <p class="font-sans font-bold">
+                            Wallet
+                        </p>
+                    </span>
+                    
+                </div>
+                <div class="mt-[48px]  ">
+                    <p class="text-4xl font-sans font-bold">The Fastest Way to</p>
+                    <p class="text-4xl font-sans font-bold"> Pay In-store & Online.</p>
+                    <br>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+                    <p class="font-sans  text-lg">Load up your Paytm Wallet for free and make payments</p>
+                    <p class="font-sans  text-lg">in a jiffy at over 21 million stores, websites and apps.</p>
+                    <br>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+                </div>
+                <div class=" bg-black w-[230px] rounded-full text-center mt-6 hover:bg-white border-solid border-2 border-black group">
+                <button class=" text-white py-3 font-sans font-semibold group-hover:text-black" >Download Paytm App</button>
+            </div>
+            </div>
+            <!-- right -->
+            <div class="pl-[14px] bg-white">
+                <img src="/assets/page3_ss(new)-9aa51f32.webp" alt="" class="h-[460px] w-[539px]">
+            </div>
+        </div>
+        <!-- page 4 -->
+        <div class="
+         pt-[80px] pb-[126px] flex bg-white mt-[48px] h-[627px]"  >
+            <!--left section-->
+            <div class="  pl-[115px]  w-1/2 bg-white ">
+                <div class=" flex">
+                    <span>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAACgCAMAAAC8EZcfAAABMlBMVEUAAAD////39/v2+Pr2+Pv2+Pn1+Pr19/n09vr29/r09Pr19/r3+vz39//19fz19/r19vn1+fn29vrv///39/f09Pr0+vr1+Pr09/fy9fzz9/v29vj1+Pv09/r09/r3+fr09vrv7//09vj09vr19vj19vr19vr09/n1+fr19fn0+Pjz9vr09PT09fn1+Pny9Pr19/rm7PPX4Oxvk70HRI5hh7Z+nsR+ncQ0ZaIWT5UlW5ty3fcMyPRG1PXJ7viNqcslWptgh7Yby/TY8fm5yt+btNFDcak40fUpzvWctNFvkr1SfLDI1ebX4ezn9Plj2vaMqMtwk71x3fc0ZqKA4PeP4vee5fdCcamNqMuA3/erv9gpzvRy3Paqv9g40fQay/TJ7vlRfLBj2fbm9Ppy3PdG0/U4mcQrAAAAMHRSTlMAEEBvj6/P3++/YJ9fIFDfr1CPECAwMO9gUEBwr79gn88QcJCwz++gn1BwkDCgr2APSvHzAAAAAW9yTlQBz6J3mgAAAAFzUkdCAK7OHOkAAAYoSURBVHja7d39X9tEGADwQHmroGWjE+gck3Xo1E1TDGAxjpZ1JUDrGzqrOJxT//9/waZpkrvc23OXpPfs8+H5bW3X+37u9cmlORwHFHPzlYXFpeUVt4BYWa4uLlTm52AlQ3DvrS4XAcvG0ura+wXoKtUycHFUcxrnS9VFsfiBeeWV0rJs1NaMfJVCRkRpxPkZ1Z4hcW59trwwVjWGy50Ztq5BJc4t2OCFcXcD4qsv2fKNKxHQzPesNG8i/FDlW7PJC2MNuU8hROCTClH4JMJ7tmVxCEZKfcarmzg2ubPNHBrfeLbhzdjW1g9e3GV9W7ZNdGzj7YBRbGYbedW2KBuLqBs4jAYFRNbAYdSQV6Dr3sddgdQ4QVmBZBWirECiF27blogiHsgf2YaIojpdRGw7xLGBeYiEEQ2TB7YZ4qgib+GojRG3sOvuYMxjyHg4Bn5sGyGL8Vy9a9sgjw2nYZsgj4bzyDZBHvedpm2CPJp4F+IoHmNeR8LYw5oLxlFzPrFNkMemY1ugilvgLdB23AJvgbYDCGztK6JlF/i1p4yDkogg4KHa53lHFoHfQIBti8BjHeC3/nfPs19w0u4clgk8ggC7sc/3T1/Q/78Xvv+yRGCrq/b1p4PkbAz0A1p47pkLQcB0muldEM19Sc4z8ScDnxVGQK9XIpCIQVqdB5y3IyAtnALbg5kAXXfYj4UnQqAffM8AvfY+vJA8QGLUsHUSA/2zVBgDvY6+0Azo9trToSEGEsIEaCA0BEYzB6/jp0D/BxaoLzQFuj8KqpAAJkIC6HU012wY8KStXEd+4gD9n1mgd6UnBAF1kgUK6P8yeW1IrZVXxQN1kgUayBUeQMrUAoKSBY8LzC0EAS8gvi4f6P/KEWqkNiBg60rt6+8LgP6rXEIQcLwA99iIeuZv0T+SJYUF5hMCgZwYRiWNMi9zgKfPcwjNgQdRQdnVmAOMhQNqNgWmh8bAk6iYTvZ1HjBOsU2EpsA4W2BK4QLj9PAlNXGC0kND4LT+2AoUAM2FRsBeX9xMAmCcwFJTKiSB1Qe2Uh7vYl0EnKaHLaobApIvPWBrMLokSuhyPiIE+mdsFQKEQOCg77WPjzNJ1wXvk2Kg/3v4/h+ZBagY4JCTD7ZH3I9KgKeTr8p8jSo7hAFH4rVXA+i/4ABVbQwDMnsffeFFuAR4Hb4/oL+ooyoaBuzRjXsp2SOQAP8M3z+nga+LAbrpbsLVxWtptxEDbybv9ynfubJkIDARKucFIfB6Mg/SXXCkLhgKBAtFwOvJWteiUi7IpiwYmGTVCmEg87lXuj6NlQQoDGS+rrZPZ6mDCbnAv95M3qNuFlyACtVai5MOJNscCMQ+6vq/CytTL1kYAoQ84CvW9ze0TC0gRBiAfPANGj1gKryEAydJTJKDR70YvoGkCUyFou2LgO+jVjidTUJdoFIYAOpPZxNTG5jmhnxhwPMdGvtMLpqSq1vu5kDA8Y3MfUZXdVIhBXwbvUYuILo3S0yAUmHA+kig9s0cI2B6/c0KCeBN/BoBVCeAhQAlwhR4k9wn6Zr7jPdmhMIEeJ3eaUqABnflTYHxfRJm9yMGXhN3E7vmvhz7g0d8YcD6YqDRrxrMgQJhwPqmQLNfXeQAJsI2ufQHrC8CAhPUIoGJkLxMfpsmqEkMNBLUQoGxkAT+86//35vs54ZHygt0ITDfj2wnwk6ur5DHZt6fKR8dt/sGN/rBUcP9tEb40BD6n8qjf9gA/eMa6B94Qf/IEO7HIfYcx/nUNkIWT7A/+BeeS4K6E9bfhYdPMc+E0ckziNu47uB+wPjx9Bl3tIvJZ+/KMQZYh0l6ONMuyofryNNIPreN4QV1uhXCXkgd54JxIGeOB1u37cnGk8yZR9jGSa2ePTYK2ZEpnPPfvrBtIqPJ+pzdPduqNGrck4zraLoh2wGjQHO831NHEDu2ZVHsOA5qocSHQij1IRAqfOORYjVvWHmq8tk9iXCprvaNZ2xra0oTetL8lpVKXLkD5IXN/Gz2vi/1DuqfdSXWGlq8WRNXHmnzZkmsVYz/DMP2evm8qn7jUsNlq9Sdm6p55ZHGZ6XkssurXxX4FzYaleb6g6L+/MfeerPSAOL+B3yrqmTcLQ9aAAAAAElFTkSuQmCC" alt="" class="h-[90px] w-[92px]">
+                    </span>
+                    <span class="pt-6 leading-tight">
+                        <p class="font-sans font-bold">
+                            UPI Money
+                        </p>
+                        <p class="font-sans font-bold">
+                            Transfer
+                        </p>
+                    </span>
+                    
+                </div>
+                <div class="mt-[48px]  ">
+                    <p class="text-4xl font-sans font-bold">Pay anyone directly</p>
+                    <p class="text-4xl font-sans font-bold">from your bank</p>
+                    <p class="text-4xl font-sans font-bold">account.</p>
+                    <br>
+
+                    <p class="font-sans  text-lg">Pay anyone, everywhere. Make contactless & secure</p>
+                    <p class="font-sans  text-lg">payments in-stores or online using Paytm Wallet or</p>
+                    <p class="font-sans  text-lg">Directly from your Bank Account. Plus, send & receive</p>
+                    <p class="font-sans  text-lg"> money from anyone.</p>
+                    <br>
+
+                </div>
+                <div class=" bg-black w-[230px] rounded-full text-center mt-6 hover:bg-white border-solid border-2 border-black group">
+                <button class=" text-white py-3 font-sans font-semibold group-hover:text-black" >Download Paytm App</button>
+            </div>
+            </div>
+            <!-- right -->
+            <div class="pl-[14px] bg-white">
+                <img src="/assets/page4_ss-14ce1fed.webp" alt="" class="h-[460px] w-[539px]">
+            </div>
+        </div>
+        <!-- page 5  -->
+        <div class="
+        pt-[80px] pb-[126px] flex bg-white mt-[48px] h-[627px] justify-between"  >
+           <!--left section-->
+           <div class="  pl-[115px]  w-1/2 bg-white ">
+               <div class=" flex">
+                   <span>
+                       <img src="/assets/page5_logo-64bae90e.webp" alt="" class="h-[90px] w-[192px]">
+                   </span>
+                   
+               </div>
+               <div class="mt-[48px]  ">
+                   <p class="text-4xl font-sans font-bold">Want it?</p>
+                   <p class="text-4xl font-sans font-bold">No more waiting for it.</p>
+                   <br>
+
+                   <p class="font-sans  text-lg">With Paytm Postpaid, your wishlist doesn't have to be</p>
+                   <p class="font-sans  text-lg">on the waitlist. Shop for the things you want today and</p>
+                   <p class="font-sans  text-lg">pay for them next month.</p>
+                   <br>
+
+               </div>
+               <div class=" bg-bhover w-[165px] h-[50px] rounded-full text-center mt-6 hover:bg-bluehover  group transition-all duration-300">
+                <span class="hidden  text-white py-3 font-sans font-semibold text-lg group-hover:block transition-all duration-300">Learn More ->
+                </span>
+                <span>
+                    <button class=" text-white py-3 font-sans font-semibold text-lg group-hover:hidden transition-all duration-300" ><span>Learn More ></span></button> 
+                </span>
+                  
+               
+           </div>
+           </div>
+           <!-- right -->
+           <div class="h-[500px] w-[440px] bg-white pr-10">
+               <img src="/assets/page5_ss-0fb46e2b.webp" alt="" class="h-[460px] w-[539px]">
+           </div>
+           
+       </div>
+       <!-- page 6 -->
+       <div class="mt-[48px] flex justify-between">
+        <!-- left -->
+        <div class="bg-white rounded-xl w-[561px]  pl-[64px] pr-[64px]">
+            <div class=" pt-[68px]">
+                <img src="data:image/png;base64,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" alt="" class="w-[185px] h-[77px]">
+            </div>
+            <div class="font-sans font-bold text-4xl pt-[35px] mb-[20px]">
+                Unlimited Cashback Everytime
+            </div>
+            <div class="text-xl font-sans font-medium mb-[55px]">
+                Paytm HDFC Bank Select Credit Card. A card with assured Cashback and incredible offers
+            </div>
+            <img src="/assets/page6_left_ss-469d3add.webp" alt="">
+        </div>
+        <!-- right -->
+        <div class="bg-white rounded-xl w-[561px]  pl-[64px] pr-[64px]">
+            <div class=" pt-[125px]">
+                <img src="data:image/png;base64,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" alt="" class="w-[195px] h-[20px]">
+            </div>
+            <div class="font-sans font-bold text-4xl pt-[35px] mb-[20px]">
+                India’s Most Sincere Credit Card
+            </div>
+            <div class="text-xl font-sans font-medium mb-[55px]">
+                Paytm SBI Card SELECT - With Intelligent Features & Great Rewards that Never Expire
+            </div>
+            <img src="/assets/page6_right_ss-c18f3c0e.webp" alt="">
+        </div>
+        </div>
+    </section>
+    <!-- page 7 -->
+    <section class="bg-gray100 pl-[180px] pr-[180px] pb-[180px] bg-opacity-30">
+        <div class="font-sans font-bold text-5xl h-[170px] bg-white ">
+            <br>
+            <br>
+            <br>
+            Financial Services by Paytm
+        </div>
+        <div class="flex justify-between bg-white">
+            <!-- left -->
+            <div class="pt-[68px] w-1/2">
+                <img src="data:image/png;base64,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" alt="" class="w-[212px] h-[47px]">
+                <div class="mt-[52px] font-sans font-bold text-5xl w-[468px]">
+                    India's most sincere bank.
+                </div>
+                <div class="text-xl font-sans font-medium w-[515px] pt-7 mb-[45px]"> 
+                    Paytm Payments Bank offers secure, transparent and risk-free banking at your fingertips. With instant account opening, virtual debit card and zero balance requirements, experience the future of banking today
+                </div>
+                <div class=" bg-bhover w-[165px] h-[50px] rounded-full text-center mt-6 hover:bg-bluehover  group transition-all duration-300">
+                    <span class="hidden  text-white py-3 font-sans font-semibold text-lg group-hover:block transition-all duration-300">Learn More ->
+                    </span>
+                    <span>
+                        <button class=" text-white py-3 font-sans font-semibold text-lg group-hover:hidden transition-all duration-300" ><span>Learn More ></span></button> 
+                    </span>
+                      
+                   
+               </div>
+                
+            </div>
+            <!-- right -->
+            <div class="pt-[35px]">
+                <img src="/assets/page7_right-e6a544d0.webp" alt="" class="w-[452px] h-[500px]">
+            </div>
+        </div>
+        
+    </section>
+    <!-- page 8 -->
+    <section>
+        <div class="bg-[url('/images/fin-sec-bg.png')] bg-center bg-contain bg-no-repeat lg:bg-cover  ">
+            <!-- <div class="w-[90%] md:w-[85%] lg:w-[80%] mx-auto "> -->
+                <div class="b pl-[180px] pr-[180px] pb-[180px] flex justify-between flex-row-reverse ">
+                    <!-- right -->
+                    <div class="pt-[83px] w-1/2 pl-[52px]">
+                        <img src="/assets/fin_right_logo-41ca2e14.webp" alt="" class="w-[157px] h-[54px]">
+                        <div class="mt-[48px] font-sans font-bold text-4xl w-[390px]">
+                            Build Long-term Wealth & Achieve your Goals.
+                        </div>
+                        <div class="text-xl font-sans font-medium w-[515px] pt-7 mb-[45px]"> 
+                            Investing on Paytm Money is transparent, low-cost and commission-free. Buy stocks & mutual funds that can help you create wealth & realise your dreams.
+                        </div>
+                        <div class=" bg-bhover w-[165px] h-[50px] rounded-full text-center mt-6 hover:bg-bluehover  group transition-all duration-300">
+                            <span class="hidden  text-white py-3 font-sans font-semibold text-lg group-hover:block transition-all duration-300">Learn More ->
+                            </span>
+                            <span>
+                                <button class=" text-white py-3 font-sans font-semibold text-lg group-hover:hidden transition-all duration-300" ><span>Learn More ></span></button> 
+                            </span>
+                              
+                           
+                       </div>
+                        
+                    </div>
+                    <!-- left -->
+                    <div class="pt-[80px]">
+                        <img src="/assets/fin_left_ss-9156ccfa.webp" alt="" class="w-[472px] h-[428px]">
+                    </div>
+                </div>
+
+            <!-- </div> -->
+        </div>
+    </section>
+    <!-- page 9 -->
+    <section class="bg-gray100 bg-opacity-30 pl-[180px] pr-[180px] ">
+        
+        <div class="flex justify-between bg-white">
+            <!-- left -->
+            <div class="pt-[101px] w-1/2 pb-[149px]">
+                <img src="/assets/insurance_left_logo-207a39ea.webp" alt="" class="w-[183px] h-[54px]">
+                <div class="mt-[48px] font-sans font-bold text-4xl w-[468px]">
+                    Insurance made easy.
+                </div>
+                <div class="text-xl font-sans font-medium w-[527px] pt-7 h-[158px]"> 
+                    Buying insurance does not have to be tedious, time-consuming & confusing. Paytm Insurance removes the worry of getting insured by making it simple, convenient & easy-to-understand.
+                </div>
+                <div class=" bg-bhover w-[165px] h-[50px] rounded-full text-center mt-6 hover:bg-bluehover  group transition-all duration-300">
+                    <span class="hidden  text-white py-3 font-sans font-semibold text-lg group-hover:block transition-all duration-300">Learn More ->
+                    </span>
+                    <span>
+                        <button class=" text-white py-3 font-sans font-semibold text-lg group-hover:hidden transition-all duration-300" ><span>Learn More ></span></button> 
+                    </span>
+                      
+                   
+               </div>
+                
+            </div>
+            <!-- right -->
+            <div class="pt-[80px] pb-[128px]">
+                <img src="/assets/insurance_right_ss-50677d4e.webp" alt="" class="w-[433px] h-[399px]">
+            </div>
+        </div>
+         <!-- page 10 -->
+         <div class="flex justify-between">
+            <!-- left -->
+
+            <div class="pt-[80px] pb-[128px]">
+                <img src="/assets/loan_left-e56056cc.webp" alt="" class="w-[433px] h-[438px]">
+            </div>
+            
+            <!-- right -->
+            <div class="pt-[124px] w-1/2 pb-[149px] pl-[64px]">
+                <img src="data:image/png;base64,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" alt="" class="w-[188px] h-[54px]">
+                <div class="mt-[48px] font-sans font-bold text-4xl w-[390px]">
+                    Get a Personal Loan in 2 Minutes.
+                </div>
+                <div class="text-xl font-sans font-medium w-[527px] pt-7 h-[106px]"> 
+                    Paytm offers India's quickest multi-purpose, hassle-free loan. It is 100% digital, transparent and paperless.
+                </div>
+                <div class=" bg-bhover w-[165px] h-[50px] rounded-full text-center mt-6 hover:bg-bluehover  group transition-all duration-300">
+                    <span class="hidden  text-white py-3 font-sans font-semibold text-lg group-hover:block transition-all duration-300">Learn More ->
+                    </span>
+                    <span>
+                        <button class=" text-white py-3 font-sans font-semibold text-lg group-hover:hidden transition-all duration-300" ><span>Learn More ></span></button> 
+                    </span>
+                      
+                   
+               </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- page 11 -->
+    <section class="px-[180px] pt-[120px] bg-white">
+        <div>
+            <div class="font-sans font-bold text-5xl pb-9">
+                Business Services by Paytm
+            </div>
+            <div class="flex justify-between flex-row-reverse bg-gray100 bg-opacity-30">
+                <!-- right -->
+    
+                <div class="py-[80px] ">
+                    <img src="/assets/11right-16ab0ce4.webp" alt="" class="w-[433px] h-[464px]">
+                </div>
+                
+                <!-- left -->
+                <div class="pt-[212px] w-1/2 pb-[149px] pl-[115px]">
+                    
+                    <div class=" font-sans font-bold text-4xl w-[390px]">
+                        Accept payments online with ease
+                    </div>
+                    <div class="text-lg font-sans font-medium w-[475px] pt-7 h-[106px]"> 
+                        Grow your business with the payment gateway that powers India’s largest brands and even the Paytm App
+                    </div>
+                    <div class=" bg-bhover w-[165px] h-[50px] rounded-full text-center mt-6 hover:bg-bluehover  group transition-all duration-300">
+                        <span class="hidden  text-white py-3 font-sans font-semibold text-lg group-hover:block transition-all duration-300">Learn More ->
+                        </span>
+                        <span>
+                            <button class=" text-white py-3 font-sans font-semibold text-lg group-hover:hidden transition-all duration-300" ><span>Learn More ></span></button> 
+                        </span>
+                          
+                       
+                   </div>
+                    
+                </div>
+
+        </div>
+        <!-- page 12 -->
+        <div class="flex justify-between flex-row-reverse mt-[48px] bg-gray100 bg-opacity-30 mb-[48px]">
+            <!-- right -->
+
+            <div class="py-[80px] ">
+                <img src="/assets/12_right-45b175bf.webp" alt="" class="w-[433px] h-[342px]">
+            </div>
+            
+            <!-- left -->
+            <div class="pt-[90px] w-1/2  pl-[115px]">
+                
+                <div class=" font-sans font-bold text-4xl w-[390px] pt-[48px]">
+                    In-shop payments powered by Paytm.
+                </div>
+                <div class="text-lg font-sans font-medium w-[475px] pt-7 h-[132px]"> 
+                    Millions of small & big businesses use Paytm to accept payments anywhere any time with a wide range of solutions for all kind of merchants
+                </div>
+                <div class=" bg-bhover w-[165px] h-[50px] rounded-full text-center mt-6 hover:bg-bluehover  group transition-all duration-300">
+                    <span class="hidden  text-white py-3 font-sans font-semibold text-lg group-hover:block transition-all duration-300">Learn More ->
+                    </span>
+                    <span>
+                        <button class=" text-white py-3 font-sans font-semibold text-lg group-hover:hidden transition-all duration-300" ><span>Learn More ></span></button> 
+                    </span>
+                      
+                   
+               </div>
+                
+            </div>
+
+    </div>
+        </div>
+    </section>
+    <section class="pt-[120px] bg-white px-[180px]">
+        <div class="w-[480px] h-[185px] font-bold text-4xl font-sans">Business Tools to help your business grow</div>
+        <div class="flex gap-[70px] pb-[120px] ">
+            <!-- 1 -->
+            <div>
+                <img src="/assets/white_sec1-f138021f.webp" alt="" class="w[240px] h-[220px] mb-[3px]">
+                <div class="font-sans w-[240px]">
+                    <div class="text-3xl  font-bold pt-[40px]">
+                        POS Billing
+                        Software
+                    </div>
+                    <div class="mt-5 text-xl font-medium mb-3">
+                        Say Hello to Smart Retail Business Management
+                    </div>
+                    <div class="hi" >
+                        <span >
+                            <a href="" class="font-bold group">Learn More   </a>
+                        </span>
+                        
+                        <span class="mt-1 hi-hover:translate-x-1 transition-all duration-400 ease-in-out"><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div>
+                <img src="/assets/white_sec2-9856108d.webp" alt="" class="w[240px] h-[220px] mb-[3px]">
+                <div class="font-sans w-[240px]">
+                    <div class="text-3xl  font-bold pt-[40px]">
+                        Paytm for
+                    Business App
+                    </div>
+                    <div class="mt-5 text-xl font-medium mb-3">
+                        Everything you need to manage your business on your phone
+                    </div>
+                    <div class="hi" >
+                        <span >
+                            <a href="" class="font-bold group">Learn More   </a>
+                        </span>
+                        
+                        <span class="mt-1 hi-hover:translate-x-1 transition-all duration-400 ease-in-out"><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div>
+                <img src="/assets/white_sec3-1e9259cd.webp" alt="" class="w[240px] h-[220px] mb-[3px]">
+                <div class="font-sans w-[240px]">
+                    <div class="text-3xl  font-bold pt-[40px]">
+                        Advertise on
+Paytm
+                    </div>
+                    <div class="mt-5 text-xl font-medium mb-3">
+                        Grow your business by advertising on India’s largest mobile business
+                    </div>
+                    <div class="hi" >
+                        <span >
+                            <a href="" class="font-bold group">Learn More   </a>
+                        </span>
+                        
+                        <span class="mt-1 hi-hover:translate-x-1 transition-all duration-400 ease-in-out"><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div>
+                <img src="/assets/white_sec4-960665e5.webp" alt="" class="w[240px] h-[220px] mb-[3px]">
+                <div class="font-sans w-[240px]">
+                    <div class="text-3xl  font-bold pt-[40px]">
+                        Business
+Khata
+                    </div>
+                    <div class="mt-5 text-xl font-medium mb-3">
+                        Managing Khata made easy
+                    </div>
+                    <div class="hi" >
+                        <span >
+                            <a href="" class="font-bold group">Learn More   </a>
+                        </span>
+                        
+                        <span class="mt-1 hi-hover:translate-x-1 transition-all duration-400 ease-in-out"><i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
 </html>
